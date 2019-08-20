@@ -1,4 +1,4 @@
-# Android Architecture Notes
+# Angular Architecture Notes
 
 ## Components
 The most basic building block of your Angular application (and this is a concept that's not new) is the component. A component consists of three primary elements:
