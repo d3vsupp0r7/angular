@@ -35,6 +35,15 @@ CREATE src/app/<service_name>.service.spec.ts (343 bytes)
 CREATE src/app/<service_name>.service.ts (137 bytes)
 ```
 
+## Angular Forms
+
+### Template Driven Forms
+With this type of form
+
+### Reactive Forms (or Model Driven)
+With this type of form
+
+
 # Angular projects -  important files
 ## Routing
 File: **app-routing.module.ts**  
@@ -57,6 +66,14 @@ The main file is the entry point used by angular to launch and bootstrap the app
 The tsconfig.json file configures how the TypeScript compiler will convert TypeScript into JavaScript that is understood by the browser. 
 
 # Commands
+
+## npm
+
+### Install a specific angular cli version
+
+```
+npm install -g @angular/cli@<version.name>
+```
 
 ## yarn
 
@@ -90,3 +107,12 @@ Run server on a specific port
 ng serve --port xxxx
 ```
 
+# Useful resources
+
+## NVM tool: manage diffrent node versions
+
+Url: https://github.com/coreybutler/nvm-windows/releases  
+
+Tips:   
+* Install the .exe as administrator
+* Prove to install node versions using the powershell.
