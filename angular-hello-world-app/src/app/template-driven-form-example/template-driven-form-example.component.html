@@ -12,6 +12,8 @@
               #name="ngModel"
               required>
       </div>
+      <!-- Add validity field check -->
+      <p [hidden]="name.valid || name.pristine" class="is-size-6 has-text-danger">Name is required.</p>
     </div>
   
     <div class="field">
@@ -25,6 +27,22 @@
               required>
       </div>
     </div>
-  <!-- -->
+  <!-- Example of SelectBox -->
+  <div class="field"> 
+
+    <label class="label" for="country">Country: </label>
+
+    <div class="control">
+    <select class="form-control" name="country" [(ngModel)]="model.country" #country="ngModel"
+      required>  
+      <option [ngValue]="null">---Select---</option>  
+      <option *ngFor="let item of countryData" [value]="item">  
+        {{item}}  
+      </option>  
+    </select>  
+    </div>
+  </div>  
+
+  <!-- Submit Button -->
     <button type="submit" class="button is-primary">Submit</button>
   </form>
