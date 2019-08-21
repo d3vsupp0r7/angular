@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 //
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { TemplateDrivenFormExampleComponent } from './template-driven-form-example/template-driven-form-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateEmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    TemplateDrivenFormExampleComponent
   ],
   imports: [
     BrowserModule,
