@@ -35,4 +35,12 @@ export class TemplateDrivenFormExampleComponent implements OnInit {
   //
   countryData: any[] = ['India', 'US', 'UK'];  
 
+  
+  snacks = [
+    { id: "jrmints", name: "Junior Mints" },
+    { id: "pmm", name: "Peanut M&Ms" },
+    { id: "popcorn", name: "Popcorn" },
+    { id: "twizzlers", name: "Twizzlers" }
+  ];
+
 }

@@ -41,14 +41,32 @@
       </option>  
     </select>  
     </div>
-  </div>  
+  </div> 
+  
+  <!-- Example SelectBox with multiple values -->
+  <div class="field"> 
+  
+      <label class="label" for="favoriteSnacks">Favorite snacks: </label>
+
+      <div class="control">
+          <select
+          name="favoriteSnacks"
+          [(ngModel)]="formUser.favoriteSnacks"
+          multiple
+          size="5">
+          <option *ngFor="let snackOption of snacks" [ngValue]="snackOption">
+              {{ snackOption.name }}
+          </option>
+      </select>
+      </div>
+  </div>
 
   <!-- Sample chackbox -->
   <div class="field"> 
       <label class="label" for="checkbox">Simple checkbox: </label>
       
       <div class="control">
-          <input type="checkbox" ngModel name="like"> Like this article?
+          <input type="checkbox" ngModel name="checkBoxValue"> Use checkbox?
       </div>
   </div>
 
@@ -59,11 +77,11 @@
       <div class="control">
         <!-- -->  
         <label>
-              <input type="radio" ngModel name="clap" value="1"> RadioButton First Selection
+              <input type="radio" ngModel name="radioGroupSelection" value="1"> RadioButton First Selection
             </label>
             <!-- -->
             <label>
-              <input type="radio" ngModel name="clap" value="2"> RadioButton Second Selection
+              <input type="radio" ngModel name="radioGroupSelection" value="2"> RadioButton Second Selection
             </label>
       </div>
   </div>
