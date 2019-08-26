@@ -60,6 +60,9 @@ The main index.html file is the initial page loaded by the browser. Webpack bund
 ## /src/main.ts
 The main file is the entry point used by angular to launch and bootstrap the application.
 
+## angular.json
+*TO_DO*
+
 ## Typescript
 
 ### /tsconfig.json
@@ -73,6 +76,12 @@ The tsconfig.json file configures how the TypeScript compiler will convert TypeS
 
 ```
 npm install -g @angular/cli@<version.name>
+```
+
+### Install bootstrap and jquery
+
+```
+npm install bootstrap jquery --save
 ```
 
 ## yarn
